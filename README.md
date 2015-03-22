@@ -1,4 +1,5 @@
-# CaptainHoog
+
+# CaptainHoog [![Build Status](https://travis-ci.org/enricogenauck/captain_hoog.svg)](https://travis-ci.org/enricogenauck/captain_hoog)
 
 Okay. That's not such a funny gem name. But it's a reference to Git and the subject
 of the gem: the Git Hooks.
@@ -96,7 +97,7 @@ So the plugins named **cucumber** and **rspec** are running before your commit a
 
 ### Migrating from pre 1.0 versions
 
-There is no migration path from previous versions. Just re-install and adjust the Hoogfile to your previous configuration.  
+There is no migration path from previous versions. Just re-install and adjust the Hoogfile to your previous configuration.
 
 ### Writing plugins
 
@@ -112,7 +113,7 @@ to pass. Whatever you want to do like syntax checking, code style checking -
 implement it and make sure you return a boolean value.
 
 ```message``` is used to define a notifiaction that is shown to the user if
-the test **fails**. This obviously must return a String.  
+the test **fails**. This obviously must return a String.
 
 You have to add a description (or name) to your plugin, this description (or name) will be used to check if the plugin should be executed or not by adding the plugins name to the section <hook plugins per type> of your Hoogfile.
 
@@ -128,7 +129,7 @@ git.describe 'sample' do |pre|
     # Define a message string here that is shown if the test fails.
   end
 
-end  
+end
 ```
 
 With ```helper``` you can extract some logic into a helper method that is useable anywhere
